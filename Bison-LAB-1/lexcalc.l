@@ -5,7 +5,9 @@
 
 %%
     /* Bison default type is integer, so our calculator will only support integer numbers, not fractions, not floats */
-[0-9]+      {
+    /*this rule [0-9]+ only read the integer part of the number, for floating point numbers we need to chnage the rule
+    so we need to chnage the rule to :*/
+[0-9]+(\.[0-9]+)?      {
                 yylval = atof(yytext);
                 return NUMBER;
             }
