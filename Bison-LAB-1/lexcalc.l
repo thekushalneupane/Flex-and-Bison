@@ -22,6 +22,7 @@
 "}"         return '}';
 "["         return '[';
 "]"         return ']';
+"%"         return '%';
 
 [ \t]     ;
 

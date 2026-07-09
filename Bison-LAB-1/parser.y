@@ -15,6 +15,7 @@ int yylex();
 %left '+' '-'
 %left '*' '/'
 %right UMINUS
+%left '%'
 
 %%
 
@@ -88,6 +89,11 @@ expression
         | NUMBER
             {
                 $$=$1;
+            }
+
+        | expression '%'
+            {
+                $$ = $1 / 100;
             }
 
         ;
