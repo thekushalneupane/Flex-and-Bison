@@ -6,7 +6,7 @@
 %%
     /* Bison default type is integer, so our calculator will only support integer numbers, not fractions, not floats */
 [0-9]+      {
-                yylval = atoi(yytext);
+                yylval = atof(yytext);
                 return NUMBER;
             }
 

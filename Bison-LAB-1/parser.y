@@ -28,7 +28,7 @@ input
 line
         : expression NEWLINE    /*address NEWLINE as finish of expression after hit enter*/
             {
-                printf("\nAnswer = %d\n", $1);
+                printf("\nAnswer = %f\n", $1);
                 printf("Enter Expression: ");
             }
         | NEWLINE
