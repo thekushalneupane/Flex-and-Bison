@@ -1,0 +1,12 @@
+changelog.md
+README.md
+win_bison.exe
+win_flex.exe
+Keywords/
+data/
+custom_build_rules/
+*.exe
+*.o
+lex.yy.c
+*.tab.c
+*.tab.h
