@@ -22,7 +22,7 @@
 "}"         return '}';
 "["         return '[';
 "]"         return ']';
-"%"         return '%';
+"%"         return '%'; /*added for percentage operator*/
 
 [ \t]     ;
 
